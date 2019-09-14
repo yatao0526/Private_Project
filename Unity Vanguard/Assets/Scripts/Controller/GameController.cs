@@ -6,12 +6,10 @@ public class GameController : MonoBehaviour
 {
     //各フェーズ管理のフラグ
     private bool standupPhase, drowPhase, standbyPhase, battlePhase, turnEndPhase = false;
-
-    private GameObject gameObject;
-
+    
     private Sprite backCard;
 
-    private GameController firstVanGuard;
+    [SerializeField] private GameObject firstVanGuard;
 
     void Start()
     {
